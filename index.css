@@ -1,0 +1,47 @@
+footer {
+    background-color: lightgray;
+    padding: 15px;
+    text-align: end;
+}
+
+/* Posa els elements articles en un flex */
+section {
+    display: flex;
+}
+
+section>article {
+    text-align: center;
+    flex: 40%;
+}
+
+#image-thumb>img {
+    width: 100%;
+}
+
+/* Borrar en producció */
+
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+
+aside>li {
+    padding: 10px;
+
+}
+
+.card {
+    border: 2px solid pink;
+}
+
+
+aside{
+    border: 2px solid greenyellow;
+
+}
+
+header{
+    text-align: center;
+}
