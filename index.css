@@ -1,5 +1,6 @@
 header {
     border: 2px solid darkgreen;
+    text-align: center;
 }
 
 header>h1 {
@@ -10,34 +11,39 @@ header>p {
     border: 1px solid blue;
 }
 
-article{
+article {
     border: 1px solid red;
 }
 
-article>h1{
+article>h1 {
     color: blue;
 }
 
-section{
+/* Element pare de  calendar, house, info*/
+section {
     border: 1px solid blue;
     margin: 10px;
-
-}
-footer {
-    background-color: lightgray;
-    padding: 15px;
-    text-align: end;
-}
-
-/* Posa els elements articles en un flex */
-section {
+    /* Aplica el flex als fills */
     display: flex;
+    /* Obliga al fill estar dins */
+    flex-wrap: wrap;
+    /* Els fills agafan tot l'espai*/
+    /* justify-content: space-between*/
+    justify-content: center
+
 }
 
 section>article {
     text-align: center;
-    flex: 40%;
+    max-width: 25%;
+    min-width: 120px;
+    flex: 30%;
 }
+
+
+
+
+
 
 #image-thumb>img {
     width: 100%;
@@ -69,6 +75,10 @@ aside {
 
 }
 
-header {
-    text-align: center;
+
+
+footer {
+    background-color: lightgray;
+    padding: 15px;
+    text-align: end;
 }
