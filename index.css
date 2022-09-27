@@ -1,3 +1,28 @@
+header {
+    border: 2px solid darkgreen;
+}
+
+header>h1 {
+    border: 1px solid blue;
+}
+
+header>p {
+    border: 1px solid blue;
+}
+
+article{
+    border: 1px solid red;
+}
+
+article>h1{
+    color: blue;
+}
+
+section{
+    border: 1px solid blue;
+    margin: 10px;
+
+}
 footer {
     background-color: lightgray;
     padding: 15px;
@@ -33,15 +58,17 @@ aside>li {
 }
 
 .card {
+    margin: 10px;
     border: 2px solid pink;
+    padding: 10px;
 }
 
 
-aside{
+aside {
     border: 2px solid greenyellow;
 
 }
 
-header{
+header {
     text-align: center;
 }
