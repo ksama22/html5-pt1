@@ -6,6 +6,10 @@ header {
 header>h1 {
     border: 1px solid blue;
 }
+/* La primera lletra de cada titol, mes gran*/
+h2::first-letter{
+font-size: 40px;
+}
 
 header>p {
     border: 1px solid blue;
@@ -30,7 +34,6 @@ section {
     /* Els fills agafan tot l'espai*/
     /* justify-content: space-between*/
     justify-content: center
-
 }
 
 section>article {
@@ -40,23 +43,38 @@ section>article {
     flex: 30%;
 }
 
-
-
-
-
-
 #image-thumb>img {
     width: 100%;
 }
 
-/* Borrar en producció */
-
-
 .container {
     max-width: 80%;
     margin: 0 auto;
+    display: flex;
+    /* Obliga al fill a estar sobre */
+    flex-wrap: wrap;
+
 }
 
+
+ul{
+    list-style-type: none;
+        padding: 0;
+}
+li{
+    text-align: center;
+    border: 2px solid grey;
+    padding: 5px;
+    margin: 10px;
+    min-width: 40px;
+}
+#content-1 {
+    flex: 10%;
+}
+
+#content-2 {
+    flex: 90%;
+}
 
 aside>li {
     padding: 10px;
@@ -69,16 +87,17 @@ aside>li {
     padding: 10px;
 }
 
-
 aside {
     border: 2px solid greenyellow;
 
 }
 
-
-
 footer {
     background-color: lightgray;
     padding: 15px;
     text-align: end;
+}
+
+strong{
+    font-weight: bold;
 }
